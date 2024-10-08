@@ -17,7 +17,8 @@ import { CardListComponent } from './components/card-list/card-list.component';
   ],
   exports: [
     HomePageComponent,
-    SearchBoxComponent
+    SearchBoxComponent,
+    CardListComponent
   ]
 })
 export class GifsModule { }

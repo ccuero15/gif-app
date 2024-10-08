@@ -7,11 +7,11 @@
 </ul>
 <div class="row">
 
-  <div class="col-md-3 col-sm-6 pt-sm-2 pt-xs-2">
+  <div *ngFor="let gif of gifs" class="col-md-3 col-sm-6 pt-sm-2 pt-xs-2">
     <div class="card bg-dark text-center">
       <!-- TODO Crear Imagen -->
       <div class="card-body text-white">
-        <p class="card-text">Hola Mundo</p>
+        <p class="card-text">{{gif.title}}</p>
       </div>
     </div>
   </div>
