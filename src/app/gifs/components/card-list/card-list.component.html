@@ -1,15 +1,12 @@
-<ul>
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-</ul>
 <div class="row">
 
   <div *ngFor="let gif of gifs" class="col-md-3 col-sm-6 pt-sm-2 pt-xs-2">
     <div class="card bg-dark text-center">
-      <!-- TODO Crear Imagen -->
+      <img
+      [src]="gif.images.downsized_medium.url"
+      [alt]="gif.title"
+      class="card-img-top"
+      >
       <div class="card-body text-white">
         <p class="card-text">{{gif.title}}</p>
       </div>
