@@ -22,7 +22,7 @@ export class SearchBoxComponent {
 
   searchTag() {
     const newTag = this.tagInput.nativeElement.value
-    this.gisfsService.searchTab(newTag)
+    this.gisfsService.searchTag(newTag)
     this.tagInput.nativeElement.value = ''
     console.log({ newTag })
   }
